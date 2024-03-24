@@ -1,0 +1,254 @@
+
+.container {
+  height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(bday.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    perspective: 1000px;
+
+   /* Adjust text color for better visibility  */
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 10px; /* Adjusted padding for smaller screens */
+  }
+
+  .carousel-button {
+    font-size: 1.5em; /* Adjusted font size for smaller screens */
+  }
+
+  .countdown {
+    font-size: 1.5em; /* Adjusted font size for smaller screens */
+  }
+}
+
+.floating-heart-card {
+  position: fixed;
+  top: 10%;
+  left: 7%;
+  
+  
+  
+  animation: floatAnimationone 2s ease-in-out infinite;}
+
+@keyframes floatAnimationone {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  10% {
+    transform: scale(1);
+  }
+}
+
+.floating-wish {
+  position: fixed;
+  bottom: 15%; /* Adjust the starting position from the bottom */
+  right: 7%; /* Adjust the starting position from the right */
+ 
+  animation: floatAnimationsecond 2s ease-in-out infinite;;
+}
+
+@keyframes floatAnimationsecond {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+}
+
+.countdown-item {
+  background-image: linear-gradient(90deg, #ff3700 0%, #FFCF00 49%, #FC4F4F 80%, #ff0d00 100%);
+  animation:slidebg 5s linear infinite;
+  color: rgb(17, 17, 17);
+  border: 2px solid (90deg, #ef0909 0%, #FFCF00 39%, #FC4F4F 100%, #ff0000 100%);
+  padding: 15px 45px ;
+
+  text-transform: lowcase;
+  box-shadow: 0 0 10px #fffcfc,
+              0 0 20px #fdfdf8,
+              0 0 40px #ef0202,
+              0 0 80px #f50404;
+  font-weight: bolder;
+  margin: 29px 7px;
+  transition-duration: 0.4s;
+  border-radius: 20%;
+  animation: kreep  0.4s ease 2s infinite alternate;
+}
+.countdown-item:hover {
+  opacity: 0.3; /* Reduce opacity on hover */
+}
+.wiggle {
+
+  animation: wiggle 1s infinite;
+}
+
+/* @keyframes wiggle {
+  0% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+} */
+@keyframes kreep {
+  0% {
+    -webkit-transform: scale(1.1, 0.9);
+    transform: scale(1.1, 0.9);
+  }
+  50% {
+    -webkit-transform: scale(0.9, 1.1) translateY(-0.5rem);
+  }
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.music-button {
+  
+background: rgb(97, 69, 110);
+  margin-top: 69px;
+  border-radius: 20px ;
+  cursor: pointer;
+  font-size: 45px;
+ padding:   5px 5px 1px 1px;
+ margin-left: 1em;
+ box-shadow: 0 0 10px #fffcfc,
+ 0 0 20px #fdfdf8,
+ 0 0 40px #ef0202,
+ 0 0 80px #f50404;
+ color:"white" !important;
+ height: 12%;
+}
+.music-button:hover{
+background-color: transparent;
+}
+.card {
+  
+  box-shadow: 0 0 10px #fffcfc,
+  0 0 10px #fdfdf8,
+  0 0 20px #ef0202,
+  0 0 40px #f50404; border-radius: 5px; /* Add rounded corners */
+  padding: 17em; /* Add some padding */
+ background-color: transparent;
+
+  /* Set a fixed width for the card */
+} 
+
+.card-body .carousel {
+  display: flex; /* Make the carousel a flex container */
+  justify-content: center; /* Align carousel content horizontally to the center */
+  align-items: center; /* Align carousel content vertically to the center (optional) */
+}
+.carousel {
+  position: relative;
+}
+
+.carousel-image {
+   width: 100%;
+  height: 71%;
+  object-fit: cover; 
+  position: fixed;
+  cursor: pointer;
+  
+}
+.carousel-image:hover{
+
+  transition: transform 0.10s ease-in-out !important; /* Smooth transition for slides */
+ 
+}
+
+.carousel-button   {
+  position: absolute;
+  margin-top: 60%;
+  transform: translateY(-50%);
+  background-color: transparent  ;
+  color: white;
+  border: none;
+  padding: 100px 16px;
+  cursor: pointer;
+
+}
+/* .frames{
+  width: 500px;
+  height: 100px;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 0.8rem;
+margin-left: 50rem;
+  transform: rotateY(-230deg) rotateX(20deg);
+  position: center;
+} */
+/* .frames img{
+  width: 148px;
+  height: 175px;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+} */
+/* .frames p{
+ font-size: 20px;
+ font-weight: bold;
+ transform: rotateY(180deg);
+}
+.frames:nth-child(1)
+{
+  top:-100px;
+  z-index: -1;
+  background-color: coral;
+}
+.frames:nth-child(2){
+  background-color: goldenrod;
+  top:-5px;
+} */
+.gif-button {
+ cursor: pointer;
+  transition: background-color 0.3s ease;
+   display: inline-flex;
+  background: rgb(97, 69, 110);
+  text-transform: lowcase;
+  border-radius: 20px ;
+  cursor: pointer;
+  font-size: 48px;
+ margin-top: 1.5em;
+ margin-left: 1em;
+ box-shadow: 0 0 10px #fffcfc,
+ 0 0 20px #fdfdf8,
+ 0 0 40px #ef0202,
+ 0 0 80px #f50404;
+ color:"white" !important;
+}
+.button{
+margin-top: 33.4%;
+display: flex;
+margin-left: 32rem;
+}
+.gif-button:hover {
+  background-color: transparent;
+  
+}
+
+.gif-image {
+  position: fixed;
+ height: 40ch;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* Ensures the GIF is above other content */
+}
