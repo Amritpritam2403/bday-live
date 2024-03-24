@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/bday-live/static/css/main.cdb3b47d.css",
+    "main.js": "/bday-live/static/js/main.3ec90dcc.js",
+    "static/js/453.3a02142a.chunk.js": "/bday-live/static/js/453.3a02142a.chunk.js",
+    "static/media/bday.gif": "/bday-live/static/media/bday.0ce5783f9aedb3cc3ef4.gif",
+    "index.html": "/bday-live/index.html",
+    "main.cdb3b47d.css.map": "/bday-live/static/css/main.cdb3b47d.css.map",
+    "main.3ec90dcc.js.map": "/bday-live/static/js/main.3ec90dcc.js.map",
+    "453.3a02142a.chunk.js.map": "/bday-live/static/js/453.3a02142a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cdb3b47d.css",
+    "static/js/main.3ec90dcc.js"
+  ]
+}
