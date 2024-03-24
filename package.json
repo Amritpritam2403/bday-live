@@ -13,6 +13,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -39,5 +41,6 @@
   "devDependencies": {
     "react-scripts": "^5.0.1",
     "webpack": "^5.90.3"
-  }
+  },
+  "homepage": "https://amritpritam2403.github.io/bday-live/"
 }
